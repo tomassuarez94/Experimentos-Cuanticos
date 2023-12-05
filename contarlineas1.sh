@@ -1,4 +1,4 @@
 #!/bin/bash
 clear
-numeroLineas=$(wc -l /etc/profile)
-echo "El numero de lineas del archivo /etc/profile es:" $numeroLineas
+nlineas=(Get-Content /etc/profile).lenght
+echo "El numero de lineas del archivo /etc/profile es:" $nlineas
